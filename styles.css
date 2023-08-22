@@ -13,7 +13,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 350px; /* Fixed width */
+  max-width: 80%; /* Limit the maximum width of the game container */
+  margin: 0 auto; /* Center the game container horizontally */
 }
 
 .top-section img {
@@ -31,7 +32,7 @@ body {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   justify-content: center; /* Center cards within the row */
-  margin-top: 10px;
+  margin-top: 5px; /* Adjust spacing between rows */
 }
 
 .empty-cell, .card {
@@ -103,3 +104,11 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  /* Apply these styles for screens up to 768px wide (e.g., tablets and smaller) */
+  .game-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  /* You can add more responsive styles here */
+}
